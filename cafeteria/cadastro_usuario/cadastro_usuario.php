@@ -62,7 +62,7 @@
             }
             mysqli_close($con);
             echo "<script> alert ('Cadastro Feito com sucesso!');</script>";
-           // echo "<script>window.location = '../login/login.php';</script>";
+            echo "<script>window.location = '../login/login.php';</script>";
         }
         ?>
 </body>

@@ -58,11 +58,12 @@
             $sql= "INSERT INTO tbusuario(nomeUsuario,cpfUsuario,emailUsuario,senhaUsuario,idTipoUsuario) VALUES ('$nome','$cpf','$email','$senha',1)";
             $resultado=mysqli_query($con,$sql);
             if(!$resultado){
-            	echo "n foi possível";
+            	alert('não foi possivel.')
+            }else{
+            	echo "<script> alert ('Cadastro Feito com sucesso!');</script>";
+            	echo "<script>window.location = '../login/login.php';</script>";
             }
             mysqli_close($con);
-            echo "<script> alert ('Cadastro Feito com sucesso!');</script>";
-            echo "<script>window.location = '../login/login.php';</script>";
         }
         ?>
 </body>

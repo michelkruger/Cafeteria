@@ -12,7 +12,8 @@
 				<li><a href="../cadastro_pessoa/cadastro_pessoa0_1.php">Usuário</a></li>
 				<li><a href="../search/search.html">Pesquisa</a></li></li>
 				<li><a href="../cadastro_produtos/cadastro.html">Cadastro</a></li>
-				<li><a href="">Contate-nos</a></li>
+				<li><a href="nome_produto.php">Nome produtos </a></li>
+				<li><a href="../login/login.php">Login</a></li>
 			</ul>
 		</div>
 	</header>

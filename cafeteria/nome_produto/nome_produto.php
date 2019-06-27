@@ -13,6 +13,7 @@
 				<li><a href="../search/search.html">Pesquisa</a></li></li>
 				<li><a href="../cadastro_produtos/cadastro.php">Cadastro</a></li>
 				<li><a href="nome_produto.php">Nome produtos </a></li>
+				<li><a href="../login/login.php">Login</a></li>
 			</ul>
 		</div>
 	</header>

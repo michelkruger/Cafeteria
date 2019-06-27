@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/cadastro_usuario.css">
 </head>
 <body>
-	<form action="cadastro.php" class="container" method="POST" id="meuRei">
+	<form action="" class="container" method="POST" id="meuRei">
 
 		<img src="../img/coffeee.jpg" class="img">
 		<h1>Cadastro</h1>
@@ -55,7 +55,7 @@
             $senha=md5($senha);
         	require_once('../php/conect_bd.php');             
             $con= conect();
-            $sql= "INSERT INTO tbusuario(nomeUsuario,cpfUsuario,emailUsario,senhaUsuario,idTipoUsuario) VALUES ('$nome','$cpf','$email','$senha',1)";
+            $sql= "INSERT INTO tbusuario(nomeUsuario,cpfUsuario,emailUsuario,senhaUsuario,idTipoUsuario) VALUES ('$nome','$cpf','$email','$senha',1)";
             $resultado=mysqli_query($con,$sql);
             if(!$resultado){
             	echo "n foi possível";

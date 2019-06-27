@@ -11,8 +11,9 @@
 			<h1><a href="../index/index.html">Coffee<span>Time</span></a></h1>
 			<ul>
 				<li><a href="../search/search.html">Pesquisa</a></li></li>
-				<li><a href="cadastro.html">Cadastro</a></li>
+				<li><a href="cadastro.php">Cadastro</a></li>
 				<li><a href="../nome_produto/nome_produto.php">Nome produto</a></li>
+				<li><a href="../login/login.php">Login</a></li>
 			</ul>
 		</div>
 	</header>

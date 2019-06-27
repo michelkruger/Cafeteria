@@ -9,12 +9,12 @@
 	mysqli_close($con);
 	if(mysqli_num_rows($search)>0){
 		session_start();
-		$array_broken=mysqli_fetch_array[$search];
+		$array_broken=mysqli_fetch_array($search);
 		$_SESSION['id_type_user']=$array_broken['idTipoUsuario'];
 		$_SESSION['name']=$array_broken['nomeUsuario'];
 		$_SESSION['login']=$user;
-		$_SESSION['password']=$user;
-		header("Location: ../index/index.php");
+		$_SESSION['password']=$password;
+		header("Location: ../index/index.php?");
 	}else{
 		unset($_SESSION['id_type_user']);
 		unset($_SESSION['login']);

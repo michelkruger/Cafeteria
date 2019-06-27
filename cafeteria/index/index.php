@@ -46,7 +46,9 @@
 		Guilherme Costa da Silva.
 		<a href="https://outlook.live.com/mail/inbox"><img src="../img/gmail.png" class="img img2"></a>
 		<a href="https://www.facebook.com/michel.kruger.165"><img src="../img/fb.png" class="img"></a>
+				<a href="logof.php">nhjhduh</a>
 		</div>
+
 	</footer>
 </body>
 </html>

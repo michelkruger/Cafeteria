@@ -31,7 +31,7 @@
 	$nome=$_POST['nome_produto'];
 	if(empty($nome)){
 		echo "<p style='color:white; text-align:center;'>Preencha com o nome do produto obrigatóriamente!</p><br>";
-		echo "<a style='text-align:center;' 'href='../index/index.html'>Voltar</a>";
+		echo "<a style='text-align:center;' href='../index/index.html'>Voltar</a>";
 	}else{
 		$registro="INSERT INTO tbnomeproduto (nomeProduto) VALUES ('$nome')";
 		$result=mysqli_query($con,$registro);

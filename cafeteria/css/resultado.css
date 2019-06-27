@@ -1,0 +1,67 @@
+body{
+		margin: 0px auto;
+	}
+
+	/* Começo do cabeçalho */
+
+	#header {
+		background-color: white;
+		width: 100%;
+		height: 80px;
+	}
+
+
+	.main {
+		max-width: 90%;
+		margin: auto;
+	}
+
+	.main h1 {
+		float: left;
+		font-size: 32px;
+		font-weight: 100;
+	}
+
+	.main span {
+		font-weight: 900;
+	}
+
+	.main ul {
+		list-style-type:none;
+		float: right;
+	}
+
+	.main ul li{
+		display: inline-block;
+		padding: 5px 20px;
+		font-size: 32px;
+	}
+
+	a {
+		text-decoration: none;
+		color:#bf8d59;
+	}
+
+	.main ul li a:hover {
+		color: black;
+	}
+
+	/* Fim do cabeçalho */
+	/* começo do cadastro */
+	#forma {
+		width: 100%;
+		height: 900px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url(../img/cofe.jpg);
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	.tablediv {
+		background-color:rgba(0,0,0,0.80);
+		color: white;
+		border: 1px white;
+	}
+	/* fim do cadastro */

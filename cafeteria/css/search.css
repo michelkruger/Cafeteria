@@ -1,0 +1,120 @@
+body{
+		margin: 0px auto;
+		background-color: black;
+	}
+
+	/* Começo do cabeçalho */
+
+	#header {
+		background-color: white;
+		width: 100%;
+		height: 80px;
+	}
+
+	.main {
+		max-width: 90%;
+		margin: auto;
+	}
+
+	.main h1 {
+		float: left;
+		font-size: 32px;
+		font-weight: 100;
+	}
+
+	.main span {
+		font-weight: 900;
+	}
+
+	.main ul {
+		list-style-type:none;
+		float: right;
+	}
+
+	.main ul li{
+		display: inline-block;
+		padding: 5px 20px;
+		font-size: 32px;
+	}
+
+	a {
+		text-decoration: none;
+		color:#bf8d59;
+	}
+
+	.main ul li a:hover {
+		color: black;
+	}
+
+	/* Fim do cabeçalho */
+	/* começo do cadastro */
+	#form {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url(../img/cofe.jpg);
+		background-position: center;
+		background-attachment: fixed;
+		overflow: hidden;
+	}
+
+	.cadastro {
+		width: 500px;
+		height: 500px;
+		background-color: rgba(0,0,0,0.80);
+		display: block;
+		justify-content: center;
+		border-radius: 10px;
+	}
+
+	.cadastro h4 {
+		font-size: 50px;
+		color: white;
+		text-align: center;
+		margin: 20px;
+	}
+
+	.label {
+		color: white;
+		width: 100%;
+		display: block;
+		margin: 10px 0px 10px 70px;
+	}
+
+	.input {
+		width: 350px;
+		height: 45px;
+		margin-left:70px;
+
+	}
+
+	.textarea {
+		width: 350px;
+		height: 60px;
+		margin-left:70px;
+	}
+
+	.input_enviar {
+		width: 300px;
+		height: 45px;
+		background-color: #bf8d59;
+		color: white;
+		border-radius: 20px;
+		border:none;
+		margin: 15px 0px 0px 92.5px;
+	}
+
+	.select {
+		width: 150px;
+		height: 30px;
+		margin: 5px;
+		background-color: rgba(0,0,0,0.1);
+		color: white;
+		margin-left:70px;
+		border:none;
+
+	}
+
+	/* fim do cadastro */

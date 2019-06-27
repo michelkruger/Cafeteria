@@ -6,17 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/Cadastro_pessoa.css">
 </head>
 <body>
-	<header id="header">
-		<div class="main">
-			<h1><a href="../index/index.html">Coffee<span>Time</span></a></h1>
-			<ul>
-				<li><a href="">Produtos</a></li>
-				<li><a href="../search/search.html">Pesquisa</a></li></li>
-				<li><a href="../cadastro_produtos/cadastro.html">Cadastro</a></li>
-				<li><a href="../cadastro_pessoa/cadastro_pessoa.html">Usuário</a></li>
-			</ul>
-		</div>
-	</header>
+	<?php 
+	include('../header/header.php');
+	 ?>
 	<form id="form" method="POST" action="../php/cadastro.php">
 		<div class="arrumar">
 			<h4>Cadastro Usuário</h4>

@@ -8,7 +8,7 @@
 				var user = "<?php echo $_SESSION['id_type_user']; ?>";
 				var name = "<?php echo $_SESSION['name']; ?>";
 
-				if (user == 1) {
+				if (user == 2) {
 					 document.getElementById("main").innerHTML = "<h1><a href='../index/index.html'>Coffee<span>Time</span></a></h1><ul><li><a href='../search/search.html'>Pesquisa</a></li></li><li><a href='../cadastro_produtos/cadastro.php'>Cadastro</a></li><li><a href='nome_produto.php'>Nome produtos </a></li><li>"+name+"</li><li><a href='../index/logof.php'>Logout</a></li></ul>";
 				}else{
 					document.getElementById("main").innerHTML = "<h1><a href='../index/index.html'>Coffee<span>Time</span></a></h1><ul><li><a href='../search/search.html'>Pesquisa</a></li></li><li>"+name+"</li><li><a href='../index/logof.php'>Logout</a></li></ul>";

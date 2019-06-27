@@ -6,17 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/cadastro_produto.css">
 </head>
 <body>
-	<header id="header">
-		<div class="main">
-			<h1><a href="../index/index.html">Coffee<span>Time</span></a></h1>
-			<ul>
-				<li><a href="../search/search.html">Pesquisa</a></li></li>
-				<li><a href="cadastro.php">Cadastro</a></li>
-				<li><a href="../nome_produto/nome_produto.php">Nome produto</a></li>
-				<li><a href="../login/login.php">Login</a></li>
-			</ul>
-		</div>
-	</header>
+	<?php 
+	include('../header/header.php');
+	 ?>
 	<form id="form" method="POST" action="../php/cadastro.php">
 		<div class="cadastro">
 			<div class="arrumar">

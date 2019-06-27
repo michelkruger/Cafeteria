@@ -11,6 +11,7 @@
 		session_start();
 		$array_broken=mysqli_fetch_array[$search];
 		$_SESSION['id_type_user']=$array_broken['idTipoUsuario'];
+		$_SESSION['name']=$array_broken['nomeUsuario'];
 		$_SESSION['login']=$user;
 		$_SESSION['password']=$user;
 		header("Location: ../index/index.php");

@@ -4,6 +4,8 @@
 	<title>Cadastro</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/cadastro_usuario.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
 </head>
 <body>
 	<form action="" class="container" method="POST" id="meuRei">

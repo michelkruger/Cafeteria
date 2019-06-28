@@ -7,6 +7,7 @@
 </head>
 <body>
 	<?php 
+	include('../teste_login/teste_login.php');
 	include('../header/header.php');
 	 ?>
 	<form id="form" action="../php/select.php" method="POST">

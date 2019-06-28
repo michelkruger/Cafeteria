@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/cadastro_produto.css">
 </head>
 <body>
-	<?php 
+	<?php
+	include('../teste_login/teste_login.php');
 	include('../header/header.php');
 	 ?>
 	<form id="form" method="POST" action="../php/cadastro.php">

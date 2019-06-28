@@ -3,15 +3,13 @@
 <head>
 	<?php
 	include('../teste_login/teste_login.php');
+	include('../header/header.php');
 	?>
 	<title> it's Coffee Time</title>
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<meta charset="utf-8">
 </head>
 <body>
-	<?php 
-	include('../header/header.php');
-	 ?>
 	<nav id="nav">
 		<div class="paragraf">
 			<h4>Coffee Dreamers</h4>

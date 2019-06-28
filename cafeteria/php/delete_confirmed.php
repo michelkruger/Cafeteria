@@ -23,12 +23,12 @@
 			$sql_delete="DELETE FROM tbproduto WHERE codigoProduto=$delete_id";
 			$test=mysqli_query($con,$sql_delete);
 			if(!$test){
-				echo "<br><br><form action='../search/search.html'><p>Não foi possível realizar a exclusão do registro";
+				echo "<br><br><form action='../search/search.php'><p>Não foi possível realizar a exclusão do registro";
 			}else{
-				echo "<br><br><form action='../search/search.html'><p>Registro excluido com sucesso!";
+				echo "<br><br><form action='../search/search.php'><p>Registro excluido com sucesso!";
 			}
 		}else{
-			echo "<br><br><form action='../search/search.html'><p>Exclusão cancelada.";
+			echo "<br><br><form action='../search/search.php'><p>Exclusão cancelada.";
 		}
 		echo "</p><input type='submit' value='Retornar'></input></form>";
 		mysqli_close($con);

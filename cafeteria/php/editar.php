@@ -13,14 +13,14 @@
 			mysqli_close($con);
 			if(!$editado){
 				echo "Infelizmente ocorreu um erro e não foi possível realizar a edição";
-				echo "<a href='../index/index.html'>Voltar</a>";
+				echo "<a href='../index/index.php'>Voltar</a>";
 			}else{
 				echo "Edição concluída com sucesso!";
-				echo "<a href='../index/index.html'>Voltar</a>";
+				echo "<a href='../index/index.php'>Voltar</a>";
 			}
 		}else{
 			echo "Processo cancelado";
-			echo "<a href='../index/index.html'>Voltar</a>";
+			echo "<a href='../index/index.php'>Voltar</a>";
 		}
 	}
 	editando();

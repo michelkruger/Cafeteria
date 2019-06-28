@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 24-Jun-2019 às 15:05
+-- Generation Time: 28-Jun-2019 às 04:07
 -- Versão do servidor: 10.1.38-MariaDB
 -- versão do PHP: 7.3.3
 
@@ -53,7 +53,8 @@ CREATE TABLE `tbnomeproduto` (
 
 INSERT INTO `tbnomeproduto` (`codigoNomeProduto`, `nomeProduto`) VALUES
 (5, 'Capuccino'),
-(6, 'Americano');
+(6, 'Americano'),
+(7, 'CafÃ© fraco');
 
 -- --------------------------------------------------------
 
@@ -104,8 +105,17 @@ CREATE TABLE `tbusuario` (
   `nomeUsuario` varchar(120) NOT NULL,
   `cpfUsuario` int(11) NOT NULL,
   `emailUsuario` varchar(150) NOT NULL,
+  `senhaUsuario` varchar(150) NOT NULL,
   `idTipoUsuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `tbusuario`
+--
+
+INSERT INTO `tbusuario` (`nomeUsuario`, `cpfUsuario`, `emailUsuario`, `senhaUsuario`, `idTipoUsuario`) VALUES
+('tassiane', 1, 'tassiane@hotmail.com', '202cb962ac59075b964b07152d234b70', 1),
+('Guilherme Silva', 123321, 'guilherme_rgcosta@hotmail.com', '202cb962ac59075b964b07152d234b70', 2);
 
 --
 -- Indexes for dumped tables
@@ -158,7 +168,7 @@ ALTER TABLE `tbhistorico`
 -- AUTO_INCREMENT for table `tbnomeproduto`
 --
 ALTER TABLE `tbnomeproduto`
-  MODIFY `codigoNomeProduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `codigoNomeProduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tbproduto`

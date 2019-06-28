@@ -3,6 +3,7 @@
 		margin: 0 auto;
 		padding:0;
 		background-color: #EEE;
+		font-family: 'arial';
 
 	}
 
@@ -49,4 +50,11 @@
 	 	border:none;
 	 	margin-bottom: 20px;
 	 	text-align: center;
+	}
+
+	#submit {
+		font-size: 12px;
+		margin-top: -10px;
+		color:#573e28;
+		font-weight: 600;
 	}

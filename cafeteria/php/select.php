@@ -19,7 +19,7 @@
 		$nome=$_POST['nomeProduto'];
 		$id=$_POST['idProduto'];
 		$valor=$_POST['valorProduto'];
-		$escolha=$_POST['select'];
+		$escolha=$_REQUEST['select'];
 		if(empty($nome) && empty($id) && empty($valor)){
 			$sql="SELECT * FROM tbproduto INNER JOIN tbnomeproduto ON codNomeProduto=codigoNomeProduto ORDER BY $escolha";
 		}else if(empty($nome) && empty($valor) && !empty($id)){
@@ -45,9 +45,9 @@
 				echo "Foram encontrados " . $line . " registros";
 				echo "<table border='1'>
 					<tr>
-						<th>Id do Produto</th>
-						<th>Nome do Produto</th>
-						<th>Valor do Produto</th>
+						<th><a name='codigo' value='codigoProduto' href=''  id='idProduto' onclick=ordena('codigoProduto')>Id do Produto</a></th>
+						<th><a name='nome' value='nomeProduto' href=''  id='nomeProduto' onclick=ordena('nomeProduto')>Nome do Produto</a></th>
+						<th><a name='valor' value='valorProduto' href=''  id='valorProduto' onclick=ordena('valorProduto')>Valor do Produto</a></th>
 						<th>Deletar</th>
 						<th>Editar</th>
 					</tr>";
@@ -77,5 +77,13 @@
 	</style>
 	</section>
 	</style>
+		<script>
+function ordena(ordem){
+	var select=ordem;
+	alert(select);
+	
+	windows.location.href=("select.php?select="+select);
+}
+</script>
 </body>
 </html>

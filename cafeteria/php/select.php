@@ -42,7 +42,6 @@
 		if($line==0){
 			echo "<p>Nenhum registro retornou</p><form action='../search/search.html'><input type='submit' value='retornar'></input></form>";
 		}else{
-			if($_SESSION['id_type_user']==2){
 				echo "Foram encontrados " . $line . " registros";
 				echo "<table border='1'>
 					<tr>
@@ -59,19 +58,6 @@
 					echo "<td><form action='delete.php' method='get'><a href='delete.php?delete=" . $result_consult['codigoProduto'] . "' name='delete'><img id='deletando' src='delete.png'</img></a></td>";
 					echo "<td><a href='delete.php?editar=" . $result_consult['codigoProduto'] . "' name='editar'><img src='editar.png' id='editando'></img></a></form></tr>";
 				}
-			}else{
-				echo "<table border='1'>
-					<tr>
-						<th>Nome do Produto</th>
-						<th>Valor do Produto</th>
-						<th>Comprar</th>
-					</tr>";
-				foreach ($consult_bd as $result_consult) {
-					echo "<td>" . $result_consult['nomeProduto'] . "</td>";
-					echo "<td>" . $result_consult['valorProduto'] . "</td>";
-					echo "<td><a><img src='compra.jpg' style='width:60px; height:50px;'</img></a></td>";
-				}
-			}
 		}
 		mysqli_close($con);
 	}

@@ -40,14 +40,14 @@
 		$consult_bd=mysqli_query($con, $sql);
 		$line=mysqli_num_rows($consult_bd);
 		if($line==0){
-			echo "<p>Nenhum registro retornou</p><form action='../search/search.html'><input type='submit' value='retornar'></input></form>";
+			echo "<p>Nenhum registro retornou</p><form action='../search/search.php'><input type='submit' value='retornar'></input></form>";
 		}else{
 				echo "Foram encontrados " . $line . " registros";
 				echo "<table border='1'>
 					<tr>
-						<th><a name='codigo' value='codigoProduto' href=''  id='idProduto' onclick=ordena('codigoProduto')>Id do Produto</a></th>
-						<th><a name='nome' value='nomeProduto' href=''  id='nomeProduto' onclick=ordena('nomeProduto')>Nome do Produto</a></th>
-						<th><a name='valor' value='valorProduto' href=''  id='valorProduto' onclick=ordena('valorProduto')>Valor do Produto</a></th>
+						<th>Id do Produto</th>
+						<th>Nome do Produto</th>
+						<th>Valor do Produto</th>
 						<th>Deletar</th>
 						<th>Editar</th>
 					</tr>";
@@ -78,12 +78,6 @@
 	</section>
 	</style>
 		<script>
-function ordena(ordem){
-	var select=ordem;
-	alert(select);
-	
-	windows.location.href=("select.php?select="+select);
-}
 </script>
 </body>
 </html>

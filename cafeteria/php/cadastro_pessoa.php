@@ -26,17 +26,9 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<header id="header">
-		<div class="main">
-			<h1><a href="../index/index.html">Coffee<span>Time</span></a></h1>
-			<ul>
-				<li><a href="../php/construct_pessoa.php">Usuário</a></li>
-				<li><a href="search.html">Pesquisa</a></li></li>
-				<li><a href="../cadastro_produtos/cadastro.html">Cadastro</a></li>
-				<li><a href="">Contate-nos</a></li>
-			</ul>
-		</div>
-	</header>
+	<?php 
+	include('../header/header.php');
+	 ?>
 	<section id="forma">
 		<p>Cadastro efetuado com sucesso!</p>
 		<br><br>

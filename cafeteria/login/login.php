@@ -6,12 +6,11 @@
 </head>
 <body>
 
-	<form class="container" method="Post">
+	<form action="login_script.php" class="container" method="Post">
 		<img src="../img/coffeee.jpg" class="img">
-		<input type="text" name="" class="input" placeholder="Escreva login">
-		<input type="number" name="" class="input" placeholder="Escreva sua senha">
+		<input type="text" name="user" class="input" placeholder="Escreva seu e-mail">
+		<input type="password" name="senha" class="input" placeholder="Escreva sua senha">
 		<input type="submit" name="Enviar" value="Logar" class="enviar">
-		<label>Esqueceu a <a href="">conta</a>?</label>
 		<label>Não tem uma conta? <a href="../cadastro_usuario/cadastro_usuario.php">Cadastre-se.</a></label>
 	</form>
 

@@ -6,16 +6,10 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<header id="header">
-		<div class="main">
-			<h1><a href="../index/index.html">Coffee<span>Time</span></a></h1>
-			<ul>
-				<li><a href="search.html">Pesquisa</a></li></li>
-				<li><a href="../cadastro_produtos/cadastro.php">Cadastro</a></li>
-				<li><a href="../nome_produto/nome_produto.php">Nome produto</a></li>
-			</ul>
-		</div>
-	</header>
+	<?php 
+	include('../teste_login/teste_login.php');
+	include('../header/header.php');
+	 ?>
 	<form id="form" action="../php/select.php" method="POST">
 		<div class="cadastro">
 			<div class="arrumar">

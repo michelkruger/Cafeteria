@@ -5,17 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/resultado.css">
 </head>
 <body>
-	<header id="header">
-		<div class="main">
-			<h1><a href="../index/index.html">Coffee<span>Time</span></a></h1>
-			<ul>
-				<li><a href="../cadastro_pessoa/cadastro_pessoa0_1.php">Usuário</a></li>
-				<li><a href="../search/search.html">Pesquisa</a></li></li>
-				<li><a href="../cadastro_produtos/cadastro.html">Cadastro</a></li>
-				<li><a href="">Contate-nos</a></li>
-			</ul>
-		</div>
-	</header>
+	<?php 
+	include('../header/header.php');
+	 ?>
 	<section id="forma">
 		<div class="tablediv">
 <?php
@@ -27,7 +19,7 @@
 		$nome=$_POST['nomeProduto'];
 		$id=$_POST['idProduto'];
 		$valor=$_POST['valorProduto'];
-		$escolha=$_POST['select'];
+		$escolha=$_REQUEST['select'];
 		if(empty($nome) && empty($id) && empty($valor)){
 			$sql="SELECT * FROM tbproduto INNER JOIN tbnomeproduto ON codNomeProduto=codigoNomeProduto ORDER BY $escolha";
 		}else if(empty($nome) && empty($valor) && !empty($id)){
@@ -48,24 +40,24 @@
 		$consult_bd=mysqli_query($con, $sql);
 		$line=mysqli_num_rows($consult_bd);
 		if($line==0){
-			echo "<p>Nenhum registro retornou</p><form action='../search/search.html'><input type='submit' value='retornar'></input></form>";
+			echo "<p>Nenhum registro retornou</p><form action='../search/search.php'><input type='submit' value='retornar'></input></form>";
 		}else{
-			echo "Foram encontrados " . $line . " registros";
-			echo "<table border='1'>
-				<tr>
-					<th>Id do Produto</th>
-					<th>Nome do Produto</th>
-					<th>Valor do Produto</th>
-					<th>Deletar</th>
-					<th>Editar</th>
-				</tr>";
-			foreach ($consult_bd as $result_consult){
-				echo "<tr><td>" . $result_consult['codigoProduto'] . "</td>";
-				echo "<td>" . $result_consult['nomeProduto'] . "</td>";
-				echo "<td>" . $result_consult['valorProduto'] . "</td>";
-				echo "<td><form action='delete.php' method='get'><a href='delete.php?delete=" . $result_consult['codigoProduto'] . "' name='delete'><img id='deletando' src='delete.png'</img></a></td>";
-				echo "<td><a href='delete.php?editar=" . $result_consult['codigoProduto'] . "' name='editar'><img src='editar.png' id='editando'></img></a></form></tr>";
-			}
+				echo "Foram encontrados " . $line . " registros";
+				echo "<table border='1'>
+					<tr>
+						<th>Id do Produto</th>
+						<th>Nome do Produto</th>
+						<th>Valor do Produto</th>
+						<th>Deletar</th>
+						<th>Editar</th>
+					</tr>";
+				foreach ($consult_bd as $result_consult){
+					echo "<tr><td>" . $result_consult['codigoProduto'] . "</td>";
+					echo "<td>" . $result_consult['nomeProduto'] . "</td>";
+					echo "<td>" . $result_consult['valorProduto'] . "</td>";
+					echo "<td><form action='delete.php' method='get'><a href='delete.php?delete=" . $result_consult['codigoProduto'] . "' name='delete'><img id='deletando' src='delete.png'</img></a></td>";
+					echo "<td><a href='delete.php?editar=" . $result_consult['codigoProduto'] . "' name='editar'><img src='editar.png' id='editando'></img></a></form></tr>";
+				}
 		}
 		mysqli_close($con);
 	}
@@ -85,5 +77,7 @@
 	</style>
 	</section>
 	</style>
+		<script>
+</script>
 </body>
 </html>

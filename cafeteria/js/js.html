@@ -1,0 +1,15 @@
+<script>
+function ordena(ordem){
+	alert(ordem);
+	if(!idProduto && !nomeProduto && valorProduto){
+		var select=valorProduto;
+		windows.location.href=("../php/select.php?select="+select);
+	}else if(!nomeProduto && !valorProduto && idProduto){
+		var select=idProduto;
+		windows.location.href=("../php/select.php?select="+select);
+	}else{
+		var select=nomeProduto;
+		windows.location.href=("../php/select.php?select="+select);
+	}
+}
+</script>
